@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Modify Pase1</title>
+    <link rel="stylesheet" href="../../../../../assets/css/user/undetermined/myPage/userManage/userModifyCheck.css">
+</head>
+<body>
+    <header>
+        <div class="menuTree">header</div>
+    </header>
+    <div class="main-container">
+        <aside>
+            <div class="myPageTitle">마이페이지</div>
+            <ul>
+                <li>계정관리</li>
+                <li>설문조사</li>
+                <li>회원탈퇴</li>
+            </ul>
+        </aside>
+        <main>
+            <div class="userManage-title">
+                <img src="" alt="프로필 아이콘">
+                <div class="title">계정관리</div>
+            </div>
+            <div class="user">
+                <form id="modifyFormCheck" action="../../../../user/undetermined/myPage/userManage/userModify.html">
+                    <div class="input-group">
+                        <label>현재 비밀번호</label>
+                        <input type="text" class="userInput">
+                        <div class="spacer"></div>
+                    </div>
+    
+                    <div class="input-group">
+                        <label>전화번호</label>
+                        <input type="tel" class="userInput">
+                        <button class="duplication">인증 번호 전송</button>
+                    </div>
+
+                    <div class="input-group">
+                        <label>인증번호</label>
+                        <input type="text" class="userInput">
+                        <button class="duplication">인증 확인</button>
+                    </div>
+                </form>
+            </div>
+            <button type="submit" form="modifyFormCheck" class="userModify">정보 수정</button>
+        </main>
+    </div>
+</body>
+</html>
