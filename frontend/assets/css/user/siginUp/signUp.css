@@ -10,6 +10,8 @@ body{
     border : 1px solid black;
     display: flex;
     flex-direction: column;
+    /* 폰트 글꼴 지정 NanumSquareRound */
+    font-family: 'NanumSquareRound', sans-serif;
 }
 
 main{
@@ -29,7 +31,7 @@ main{
     margin: 50px;
 }
 
-.SignUpBox {
+.signUpBox {
     background-color: white;
     padding: 60px 80px;      /* 상하 좌우 여백을 충분히 */
     border: 1px solid #e8eeff;
@@ -40,7 +42,7 @@ main{
     min-width: 450px;        /* 최소 너비 지정 */
 }
 
-.SignUpText {
+.signUpText {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 40px;     /* 제목과 입력창 사이 간격 */
