@@ -51,11 +51,10 @@ main{
 #contentsMain{
   width : 100%;
   height : 1112px;
-  /* background-color: blue; */
 }
 
 #mentoringBack{
-  border: 1px solid black;
+  border: 1px solid #D9E2F0;
   height : 1058px;
   width : 1438px;
   margin-top: 27px;
@@ -67,11 +66,9 @@ main{
 }
 
 #mentoring{
-  border: 1px solid black;
-}
-
-#curriculum{
-  border: 1px solid black;
+  border: 1px solid #D9E2F0;
+  border-radius: 18px;
+  background: linear-gradient(#FFFFFF,#F8FBFF)
 }
 
 #mentoringMain, #profile{
@@ -84,13 +81,83 @@ main{
   width : 862px;
 }
 
-#mentoring div{
+#mentoring .subject, #mentoring #title{
   height: 50px;
-  align-items:center;
+  display : flex;
+  align-items: center;
+  margin-left : 20px;
 }
 
-#curriculum{
+#mentoring div label{
+  font-size : 12.2px;
+  width : 75px;
+}
+
+#mentoring div input[type="text"]{
+  width : 285px;
+  height : 33px;
+  border-radius: 18px;
+  border: 1px solid #D9E2F0;
+  padding-left: 20px;
+}
+
+#mentoring #purpose{
+  height : 104px;
+  display : flex;
+  padding-left : 20px;
+  padding-top : 6px;
+}
+
+#mentoring textarea{
+  width : 719px;
+  height : 68px;
+  border: 1px solid #D9E2F0;
+  border-radius: 18px;
+  resize : none;
+  padding-left: 20px;
+  padding-top : 10px;
+}
+
+#mentoringCurriculum{
+  border: 1px solid #D9E2F0;
+  border-radius: 18px;
   margin-top : 18px;
+  padding-top : 20px;
+  padding-left:20px;
+  display : flex;
+  flex-direction: column;
+}
+
+#mentoringCurriculum #text{
+  display : flex;
+  flex-direction: column;
+}
+
+#mentoringCurriculum #text textarea{
+  margin-top: 20px;
+  padding: 20px;
+  width : 781px;
+  height : 458px;
+  border: 1px solid #D9E2F0;
+  border-radius: 18px;
+  resize : none;
+}
+
+#mentoringCurriculum #file{
+  padding-bottom: 20px;
+}
+
+#mentoringCurriculum #file #curriculumFileTitle{
+  font-size: 14px;
+  padding:20px 0px 10px 0px;
+}
+
+#mentoringCurriculum #file #curriculumFile{
+  border: 1px solid black;
+  width: 409px;
+  height: 25px;
+  padding : 10px;
+
 }
 
 #profile img{
