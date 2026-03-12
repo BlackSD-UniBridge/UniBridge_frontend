@@ -1,5 +1,5 @@
-const modifyBtn = document.querySelector("button[type='submit']");
-const deleteBtn = document.querySelector("button[type='button']");
+const modifyBtn = document.querySelector("#modBtn");
+const deleteBtn = document.querySelector("#delBtn");
 
 modifyBtn.addEventListener("click", () => {
   location.href = "/frontend/html/user/mentor/myPage/userMentoCreate/mentoringModify.html";
