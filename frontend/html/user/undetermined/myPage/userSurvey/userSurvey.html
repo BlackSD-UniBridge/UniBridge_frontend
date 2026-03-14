@@ -40,20 +40,20 @@
                     <button class="closeBtn"><img src="/frontend/assets/img/user/userProfile/close.png" alt=""></button>
                     <div class="surveyTitle">설문 조사</div>
                     <div class="modalBox">
-                        <form>
+                        <form id="surveyForm">
                             <div class="inputRow">
                                 <label>멘토/멘티</label>
                                 <div class="radioGroup">
                                     <label class="radioItem">
-                                        <span>멘토</span> <input type="radio" value="mentor" name="role" class="radioUserType" checked> 
+                                        <span>멘토</span> <input type="radio" value="mentor" name="role" class="radioUserType"> 
                                     </label>
                                     <label class="radioItem">
-                                        <span>멘티</span> <input type="radio" value="mentee" name="role" class="radioUserType"> 
+                                        <span>멘티</span> <input type="radio" value="mentee" name="role" class="radioUserType" checked> 
                                     </label>
                                 </div>
                             </div>
 
-                            <div id="mentorContent" class="mentorContentList" style="display: block;">
+                            <div id="mentorContent" class="mentorContentList" style="display: none;">
                                 <div class="inputRow">
                                     <label>대학</label>
                                     <input type="text" class="modalInput">
@@ -77,7 +77,7 @@
                                 </div>
                             </div>
 
-                            <div id="menteeContent" class="menteeContentList" style="display: none;">
+                            <div id="menteeContent" class="menteeContentList" style="display: block;">
                                 <div class="inputRow">
                                     <label>희망 과목</label>
                                     <select class="modalSelect">
@@ -93,12 +93,20 @@
                                     <label>학년</label>
                                     <input type="text" class="modalInput">
                                 </div>
+                                <div class="inputRow">
+                                    <label>희망 대학</label>
+                                    <input type="text" class="modalInput">
+                                </div>
+                                <div class="inputRow">
+                                    <label>희망 전공</label>
+                                    <input type="text" class="modalInput">
+                                </div>
                             </div>
 
                             <div class="fileAttachSection">
                                 <p class="fileLabel">파일 첨부</p>
                                 <div class="fileInputWrapper">
-                                    <input type="file" id="surveyFile" accept=".pdf, .xlsx, .jpg, .png" onchange="updateFileName()">
+                                    <input type="file" id="surveyFile" accept=".pdf, .xlsx, .xls, .doc, .docx, .jpg, .png" onchange="updateFileName()">
                                     <div class="fakeFileInput">
                                         <label for="surveyFile" id="fileSelector" class="fileSelectBtn">파일 선택</label>
                                         <label for="surveyFile" id="fileInfoDisplay" class="fileInfoActive" style="display: none;">
